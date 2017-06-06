@@ -1,0 +1,6 @@
+angular.module("underground.views", []).run(["$templateCache", function($templateCache) {$templateCache.put("main.html","<div ui-view=\"status_bar\">\n</div>\n\n<div ui-view=\"content\">\n</div>\n");
+$templateCache.put("partials/main/status_bar.html","<div class=\"status-bar\">\n  <span class=\"text\">This is the status bar!!</span>\n</div>\n");
+$templateCache.put("partials/main/home/content.html","<p>\n  Hello <span ng-bind=\"userInfo.name\"></span>!\n</p>\n\n<p>\n  <span>Key: </span>\n  <input type=\"text\" width=\"150\" ng-model=\"firebaseInfo.key\" />\n  <button ng-click=\"peek()\">Peek</button>\n</p>\n\n<p>\n\n<textarea rows=\"100\" cols=\"100\" ng-model=\"firebaseInfo.values\" readonly=\"true\">\n</textarea>\n\n</p>\n");
+$templateCache.put("partials/main/home/home.html","<div class=\"home\">\n  <div ui-view=\"sub_content\" class=\"sub-content\">\n  </div>\n</div>\n");
+$templateCache.put("partials/main/login/content.html","<div>\n  <input type=\"text\" ng-model=\"userInformation.email\" />\n</div>\n\n<div>\n  <input type=\"password\" ng-model=\"userInformation.password\" />\n</div>\n\n<div>\n  <button ng-click=\"doLogin()\">Login</button>\n</div>\n");
+$templateCache.put("partials/main/login/login.html","<div class=\"login\">\n  <div ui-view=\"sub_content\" class=\"sub-content\">\n  </div>\n</div>\n");}]);

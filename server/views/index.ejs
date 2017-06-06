@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Marc</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="_app.css">
+    <script type="text/javascript" src="_app.js"></script>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <div class="error">Sorry, you must have Internet Explorer 10 or higher to view this website</div>
+    <![endif]-->
+
+    <!--[if gt IE 9]><!-->
+        <div ui-view style="height:100%;"></div>
+        <div class="modal-container"></div>
+
+        <div ng-controller="controllers.root.firebase"></div>
+    <!--<![endif]>-->
+</body>
+
+</html>
