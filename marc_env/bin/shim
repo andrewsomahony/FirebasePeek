@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-export NODE_PATH=/sites/underground/marc_env/lib/node_modules
-export NPM_CONFIG_PREFIX=/sites/underground/marc_env
-export npm_config_prefix=/sites/underground/marc_env
-exec marc_env/bin/node "$@"
